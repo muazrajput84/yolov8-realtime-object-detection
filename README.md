@@ -1,11 +1,11 @@
-##🎯 YOLOv8 Real-Time Object Detection
+# 🎯 YOLOv8 Real-Time Object Detection
 
 Author: M. Muaz  
 Role:   AI/ML Engineer  
 Environment: Conda (Python 3.10)  
 Frameworks: PyTorch, OpenCV, Ultralytics, NumPy  
 
-##🧠 Overview
+## 🧠 Overview
 
 This project demonstrates a **real-time object detection system** built using **YOLOv8 (Ultralytics)** — a state-of-the-art object detection architecture.  
 The system can identify and label multiple objects directly from your **webcam feed** with high speed and accuracy.
