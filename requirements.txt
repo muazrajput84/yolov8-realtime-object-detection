@@ -1,8 +1,4 @@
-ultralytics
-opencv-python
-torch
-torchvision
-numpy
-pillow
-pyyaml
-tqdm
+ultralytics==8.0.200
+opencv-python==4.10.0.84
+torch==2.3.0
+numpy==1.26.4
