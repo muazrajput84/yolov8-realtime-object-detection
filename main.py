@@ -1,18 +1,3 @@
-"""
-YOLOv8 Advanced Real-Time Object Detection
-Author: Muaz
-Version: 2.0 (Enhanced for Accuracy + Performance)
-
-Features:
-✅ Real-time webcam object detection
-✅ Auto GPU/CPU detection
-✅ FPS & Object Count display
-✅ High-confidence filtering
-✅ Auto model handling
-✅ Screenshot saving (press 'S')
-✅ Clean exit (press 'Q')
-"""
-
 import cv2
 import os
 import time
@@ -20,17 +5,13 @@ import torch
 from datetime import datetime
 from ultralytics import YOLO
 
-# ---------------- SETTINGS ---------------- #
 MODEL_SIZE = "yolov8m.pt"     # Options: yolov8n.pt, yolov8s.pt, yolov8m.pt, yolov8l.pt
 CONFIDENCE_THRESHOLD = 0.6     # Filter out low-confidence detections
 SAVE_PATH = "screenshots"      # Folder to save captured frames
 WINDOW_NAME = "YOLOv8 - Real-Time Detection"
-# ------------------------------------------- #
 
-# Ensure screenshot folder exists
 os.makedirs(SAVE_PATH, exist_ok=True)
 
-# Load YOLOv8 model with error handling
 try:
     print(f"🔄 Loading YOLOv8 model: {MODEL_SIZE}")
     model = YOLO(MODEL_SIZE)
@@ -98,3 +79,4 @@ while True:
 cap.release()
 cv2.destroyAllWindows()
 print("✅ Webcam released. Program terminated successfully.")
+
