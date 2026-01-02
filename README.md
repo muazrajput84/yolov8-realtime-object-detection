@@ -1,11 +1,6 @@
-# 🎯 YOLOv8 Real-Time Object Detection
+# YOLOv8 Real-Time Object Detection
 
-Author: M. Muaz  
-Role:   AI/ML Engineer  
-Environment: Conda (Python 3.10)  
-Frameworks: PyTorch, OpenCV, Ultralytics, NumPy  
-
-## 🧠 Overview
+## Overview
 
 This project demonstrates a **real-time object detection system** built using **YOLOv8 (Ultralytics)** — a state-of-the-art object detection architecture.  
 The system can identify and label multiple objects directly from your **webcam feed** with high speed and accuracy.
@@ -15,7 +10,7 @@ This project is ideal for portfolios showcasing:
 - Deep Learning and PyTorch knowledge  
 - Real-time image processing and AI pipeline development  
 
-## 🚀 Key Features
+## Key Features
 
 ✅ Real-time object detection using webcam  
 ✅ Bounding boxes with class labels and confidence scores  
@@ -24,7 +19,7 @@ This project is ideal for portfolios showcasing:
 ✅ Modular and easy to extend for custom datasets  
 ✅ Fully open-source and free to use  
 
-## 🖼️ Detectable Objects
+## Detectable Objects
 
 The YOLOv8 model (trained on **COCO dataset**) detects **80+ object categories**, including:
 - 👨 Person  
@@ -40,7 +35,7 @@ The YOLOv8 model (trained on **COCO dataset**) detects **80+ object categories**
 
 This guide will help you set up and run the **YOLOv8 Real-Time Object Detection** project on your local machine using **Anaconda (Conda)** or **Google Colab**.
 
-## 🧰 System Requirements
+## System Requirements
 
 Recommended:
 - OS: Windows 10/11, macOS, or Linux  
@@ -64,7 +59,7 @@ Run this command in the Anaconda prompt:
 
 ```bash
 cd C:\Users\<YourUserName>\Downloads
-git clone https://github.com/<your-username>/yolov8-realtime-object-detection.git
+git clone https://github.com/muazrajput84/yolov8-realtime-object-detection.git
 cd yolov8-realtime-object-detection
 ````
 
@@ -147,25 +142,6 @@ Press S → Save the current frame (saved in `screenshots/`)
 
 ---
 
-## 🧠 Alternate Setup — Google Colab (Optional)
-
-If you don’t want to run locally or lack GPU access:
-
-1. Go to [Google Colab](https://colab.research.google.com)
-2. Upload all project files (`main.py`, `requirements.txt`, etc.)
-3. Run these cells:
-
-```python
-!pip install -r requirements.txt
-from ultralytics import YOLO
-model = YOLO('yolov8n.pt')
-results = model.predict(source='https://ultralytics.com/images/bus.jpg', show=True)
-```
-
-4. Colab doesn’t support webcam feed directly — use **video files** or sample images instead.
-
----
-
 ## 🧩 Folder Structure
 
 ```
@@ -183,7 +159,7 @@ yolov8-realtime-object-detection/
 
 ---
 
-## 🔍 Common Issues & Fixes
+## Common Issues & Fixes
 
 | Issue                | Cause                           | Fix                                                                                         |
 | -------------------- | ------------------------------- | ------------------------------------------------------------------------------------------- |
@@ -192,37 +168,6 @@ yolov8-realtime-object-detection/
 | `Camera not opening` | Permission or driver issue      | Ensure your webcam is not used by another app                                               |
 | `Slow performance`   | Using CPU                       | Enable GPU (CUDA) if available                                                              |
 
----
-
-## ⚡ GPU Setup (Optional but Recommended)
-
-If you have an NVIDIA GPU, install CUDA-enabled PyTorch:
-
-```bash
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-```
-
-To verify GPU:
-
-```python
-import torch
-print(torch.cuda.is_available())
-```
-
-If `True`, YOLOv8 will automatically use GPU for inference.
-
----
-
-## 🧩 Uninstallation (Optional)
-
-To remove the environment:
-
-```bash
-conda deactivate
-conda remove -n yolov8env --all -y
-```
-
----
 
 ## ✅ You’re Ready!
 
@@ -233,12 +178,3 @@ If everything works fine:
 You’ll see bounding boxes over detected objects.
 FPS and confidence scores will display in real-time. 
 Screenshots will save automatically in `/screenshots`.
-
-
-## 🧑‍💻 Author
-
-M. Muaz
-AI/ML Engineer | Computer Vision | Deep Learning Enthusiast
-📧 Email: muazrajput84@gmail.com
-🌐 LinkedIn: https://linkedin.com/in/muazrajput84
-🐙 GitHub: https://github.com/muazrajput84
