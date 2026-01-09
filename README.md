@@ -1,4 +1,4 @@
-# YOLOv8 Real-Time Object Detection
+# Real-Time Object Detection
 
 ## Overview
 
